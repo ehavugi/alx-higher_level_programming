@@ -2,9 +2,9 @@
 import random
 number = random.randint(-10, 10)
 if number > 0:
-    n_type = "is positive"
+    n_type = "positive"
 elif number == 0:
-    n_type = "is zero"
+    n_type = "zero"
 else:
-    n_type = "is negative"
+    n_type = "negative"
 print(f"{number} is {n_type}")
