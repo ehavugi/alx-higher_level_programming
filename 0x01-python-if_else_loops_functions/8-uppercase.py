@@ -5,9 +5,9 @@ def uppercase(str):
     ender = ""
     for i in range(size):
         c = str[i]
-        if i == size - 1:
+        if i == size - 1 or size == 0:
             ender = "\n"
         if ord(c) <= 122 and ord(c) >= 97:
-            print("{}".format(chr(ord(c)-32)), end=ender)
-        else:
-            print("{}".format(c), end=ender)
+            c = chr(ord(c)-32)
+        print("{}".format(c), end="")
+    print("")
