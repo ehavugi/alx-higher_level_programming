@@ -11,6 +11,7 @@ int check_cycle(listint_t *list)
 {
 	int size  = 0;
 	listint_t *head = list;
+	listint_t *ptr  = list;
 	int MAX = 100000; /* A number of possibly larger list*/
 
 	if (list == NULL)
@@ -22,6 +23,10 @@ int check_cycle(listint_t *list)
 	{
 		size += 1;
 		head = head->next;
+		if (head == ptr)
+		{
+			return (1);
+		}
 		if (size > MAX)
 		{
 			return (1);
