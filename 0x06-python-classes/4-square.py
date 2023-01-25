@@ -32,12 +32,14 @@ class Square:
         """
         return (self.__size)**2
 
+    @property
     def size(self):
         """
         getter for size
         """
         return self.__size
 
+    @size.setter
     def size(self, value):
         """
         Set value of size to value
