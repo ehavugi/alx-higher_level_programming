@@ -55,6 +55,7 @@ class Square:
         """
         prints square made of #
         """
+        size = self.__size
         if (size == 0):
             print()
         else:
