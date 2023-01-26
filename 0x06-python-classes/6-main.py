@@ -7,7 +7,12 @@ my_square_1.my_print()
 
 print("--")
 
-my_square_2 = Square(3, (1, 1))
+my_square_2 = Square(3, (1,-1))
 my_square_2.my_print()
 
 print("--")
+try:
+    my_square = Square(3, "Position")
+except Exception as e:
+    print(e)
+print("brah brah")

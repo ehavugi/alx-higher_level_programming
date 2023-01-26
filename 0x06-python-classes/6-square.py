@@ -22,7 +22,6 @@ class Square:
         Initialize the class by setting its attributes
         """
         self.__size = size
-        self.__position = (0, 0)
         if type(size) != int:
             raise TypeError("size must be an integer")
         if (size < 0):
@@ -32,16 +31,16 @@ class Square:
 
     def position_check(self, position):
         """
-        check if position is compliant
+        checks if position is compliant
         """
         if (type(position) == tuple):
             if len(position) == 2:
                 a = position[0]
                 b = position[1]
-                if type(a) == type(b) == int and a > 0 and b > 0:
-                    pass
-        else:
-            raise TypeError("position must be a tuple of 2 positive integers")
+                if type(a) == type(b) == int and a >= 0 and b >= 0:
+                    return
+                
+        raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
         """
