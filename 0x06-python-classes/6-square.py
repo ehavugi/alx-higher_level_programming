@@ -17,15 +17,31 @@ class Square:
     Features on top of v2
         + get value of area of square
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Initialize the class by setting its attributes
         """
         self.__size = size
+        self.__position = (0, 0)
         if type(size) != int:
             raise TypeError("size must be an integer")
         if (size < 0):
             raise ValueError("size must be >= 0")
+        self.position_check(position)
+        self.__position = position
+
+    def position_check(self, position):
+        """
+        check if position is compliant
+        """
+        if (type(position) == tuple):
+            if len(position) == 2:
+                a = position[0]
+                b = position[1]
+                if type(a) == type(b) == int and a > 0 and b > 0:
+                    pass
+        else:
+            raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
         """
@@ -51,15 +67,35 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    @property
+    def position(self):
+        """
+        returns position of the square
+        """
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        """
+        sets postion to new value
+        """
+        self.position_check(value)
+        self.__position = value
+
     def my_print(self):
         """
         prints square made of #
         """
         size = self.__size
+        position = self.__position
         if (size == 0):
             print()
         else:
+            for p in range(position[1]):
+                print()
             for i in range(size):
+                for x in range(position[0]):
+                    print(" ", end="")
                 for j in range(size):
                     print("#", end='')
                 print()
