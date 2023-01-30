@@ -2,9 +2,8 @@
 
 
 """
-Square implementation v5
+Square implementation v4
 added set method to set size to square v3
-added my_print to v4
 """
 
 
@@ -51,15 +50,38 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    def my_print(self):
+    def __lt__(self, other):
         """
-        prints square made of #
+        implements > ops
         """
-        size = self.__size
-        if (size == 0):
-            print()
-        else:
-            for i in range(size):
-                for j in range(size):
-                    print("#", end='')
-                print()
+        return self.area() < other.area()
+
+    def __eq__(self, other):
+        """
+        Implements ==
+        """
+        return self.area() == other.area()
+
+    def __ne__(self, other):
+        """
+        implements !=
+        """
+        return self.area() != other.area()
+
+    def __le__(self, other):
+        """
+        implements <=
+        """
+        return self.area() <= other.area()
+
+    def __gt__(self, other):
+        """
+        Implements >
+        """
+        return self.area() > other.area()
+
+    def __ge__(self, other):
+        """
+        Implements >=
+        """
+        return self.area() >= other.area()
