@@ -1,0 +1,12 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("""Lorem ipsum dol?N""")
+Lorem ipsum dol?
+<BLANKLINE>
+N
+>>> text_indentation("""df?dfx:34-5""")
+df?
+<BLANKLINE>
+dfx:
+<BLANKLINE>
+34-5
