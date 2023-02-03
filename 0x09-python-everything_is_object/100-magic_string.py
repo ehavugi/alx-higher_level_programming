@@ -1,4 +1,4 @@
-#!/usr/bin/python3
-n = 0
-def magic_string():
-    global n; n += 1; return "BestSchool"+", BestSchool"*(n-1)
+
+
+x = ["BestSchool"]
+def magic_string(i=x): return x[0] + (", "+x[0])*(len([x, x.append(0)][0]) - 2)
