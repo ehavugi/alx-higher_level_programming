@@ -1,0 +1,13 @@
+## 0x0A-python-inheritance
+0. 0-lookup.py
+1. 1-my\_list.py
+2. 2-is\_same\_class.py
+3. 3-is\_kinda\_of\_class.py
+4. 4-inherits\_from.py
+5. 5-base\_geometry.py
+6. 6-base\_geometry.py
+7. 7-base\_geometry.py
+8. 8-rectangle.py
+9. 9-rectangle.py
+10. 10-square.py
+11. 11-square.py
