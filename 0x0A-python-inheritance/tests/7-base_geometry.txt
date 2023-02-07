@@ -5,12 +5,21 @@
 True
 >>> bx.integer_validator("my_int", 12)
 >>> bx.integer_validator("width", 89)
->>> bx.integer_validator("age", 0) # doctest.IGNORE_EXCEPTION_DETAILS
+>>> bx.integer_validator("age", 0) # doctest.IGNORE_EXCEPTION_DETAIL
 Traceback (most recent call last):
 ValueError: age must be greater than 0
->>> bx.integer_validator("age", "John") # doctest.IGNORE_EXCEPTION_DETAILS
+>>> bx.integer_validator("age", "John") # doctest.IGNORE_EXCEPTION_DETAIL
 Traceback (most recent call last):
 TypeError: age must be an integer
->>> bx.integer_validator("distance", -4) # doctest.IGNORE_EXCEPTION_DETAILS
+>>> bx.integer_validator("distance", -4) # doctest.IGNORE_EXCEPTION_DETAIL
 Traceback (most recent call last):
 ValueError: distance must be greater than 0
+>>> bx.integer_validator("wow", None) # doctest.IGNORE_EXCEPTION_DETAIL
+Traceback (most recent call last):
+TypeError: wow must be an integer
+>>> bx.integer_validator("ages", [34, 4545]) # doctest.IGNORE_EXCEPTION_DETAIL
+Traceback (most recent call last):
+TypeError: ages must be an integer
+>>> bx.integer_validator("booed", False) # doctest.IGNORE_EXCEPTION_DETAIL
+Traceback (most recent call last):
+TypeError: booed must be an integer
