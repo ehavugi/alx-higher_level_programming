@@ -1,0 +1,16 @@
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bx = BaseGeometry()
+>>> dir(bx) ==  ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'area', 'integer_validator']
+True
+>>> bx.integer_validator("my_int", 12)
+>>> bx.integer_validator("width", 89)
+>>> bx.integer_validator("age", 0) # doctest.IGNORE_EXCEPTION_DETAILS
+Traceback (most recent call last):
+ValueError: age must be greater than 0
+>>> bx.integer_validator("age", "John") # doctest.IGNORE_EXCEPTION_DETAILS
+Traceback (most recent call last):
+TypeError: age must be an integer
+>>> bx.integer_validator("distance", -4) # doctest.IGNORE_EXCEPTION_DETAILS
+Traceback (most recent call last):
+ValueError: distance must be greater than 0

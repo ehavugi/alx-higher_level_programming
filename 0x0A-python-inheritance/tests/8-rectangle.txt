@@ -1,0 +1,6 @@
+
+>>> Rectangle = __import__('8-rectangle').Rectangle
+>>> r = Rectangle(3, 5)
+>>> r2 = Rectangle(4, True) # doctest.IGNORE_EXCEPTION_DETAIL
+Traceback (most recent call last):
+TypeError: height must be an integer

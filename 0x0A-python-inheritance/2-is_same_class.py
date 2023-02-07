@@ -9,4 +9,4 @@ def is_same_class(obj, a_class):
     """
     Class sameness checker
     """
-    return isinstance(obj, a_class)
+    return obj.__class__ == a_class
