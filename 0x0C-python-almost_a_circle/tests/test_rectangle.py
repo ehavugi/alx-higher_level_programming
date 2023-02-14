@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 import unittest
 from models.rectangle import Rectangle
 
@@ -21,4 +21,4 @@ class RectangleTests(unittest.TestCase):
 
     def testArea(self):
         r4 = Rectangle(10,2, 0, 0, 15)
-        assert(r4.area(), 20)
+        assert(r4.area() == 20)

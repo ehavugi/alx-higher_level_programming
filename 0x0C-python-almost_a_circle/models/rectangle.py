@@ -23,11 +23,15 @@ class Rectangle(Base):
         self.__width = width
 
     def area(self):
-        """ Returns the area of rectangle"""
+        """
+        Returns the area of rectangle
+        """
         return self.__height*self.__width
 
     def display(self):
-        """ displays the rectangle"""
+        """
+        displays the rectangle
+        """
         if self.__width * self.__height == 0:
             print()
         else:
@@ -36,17 +40,23 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """ read width property"""
+        """
+        read width property
+        """
         return self.__width
 
     @property
     def height(self):
-        """ getter for height"""
+        """
+        getter for height
+        """
         return self.__height
 
     @width.setter
     def width_set(self, width):
-        """ setter for height attribute"""
+        """
+        setter for height attribute
+        """
         if isinstance(width, int):
             if (width > 0):
                 self.__width = width
@@ -70,7 +80,9 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """getter for x attribute"""
+        """
+        getter for x attribute
+        """
         return self.__x
 
     @x.setter
@@ -89,12 +101,16 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """ getter for y attrr"""
+        """
+        getter for y attrr
+        """
         return self.__y
 
     @y.setter
     def y_set(self, y):
-        """ setter for y attribute"""
+        """
+        setter for y attribute
+        """
         if isinstance(y, int):
             if (y >= 0):
                 self.__y = y
