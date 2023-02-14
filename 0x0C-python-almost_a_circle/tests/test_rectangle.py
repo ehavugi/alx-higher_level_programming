@@ -18,3 +18,7 @@ class RectangleTests(unittest.TestCase):
     def test3(self):
         r3 = Rectangle(10, 2, 0, 0, 12)
         assert(r3.id == 12)
+
+    def testArea(self):
+        r4 = Rectangle(10,2, 0, 0, 15)
+        assert(r4.area(), 20)

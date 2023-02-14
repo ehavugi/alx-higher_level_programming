@@ -21,6 +21,10 @@ class Rectangle(Base):
         self.__height = height
         self.__width = width
 
+    def area(self):
+        """ Returns the area of rectangle"""
+        return self.__height*self.__width
+
     @property
     def width(self):
         """ read width property"""
