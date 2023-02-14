@@ -12,33 +12,41 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        Initialization method
+        """
         super().__init__(id)
         self.__x = x
         self.__y = y
         self.__height = height
-        self.__width  = width
+        self.__width = width
 
     @property
     def width(self):
+        """ read width property"""
         return self.__width
 
     @property
     def height(self):
+        """ getter for height"""
         return self.__height
 
     @width.setter
     def width_set(self, width):
-
+        """ setter for height attribute"""
         if isinstance(width, int):
             if (width > 0):
                 self.__width = width
             else:
-                raise("width must be > 0")
+                raise ("width must be > 0")
         else:
             raise TypeError("width must be an integer")
 
     @height.setter
     def height_set(self, height):
+        """
+        setter for height attribute
+        """
         if isinstance(height, int):
             if (height > 0):
                 self.__height = height
@@ -49,10 +57,14 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """getter for x attribute"""
         return self.__x
 
     @x.setter
     def x_set(self, x):
+        """
+        setter forx attribute
+        """
         if isinstance(x, int):
             if (x >= 0):
                 self.__x = x
@@ -64,11 +76,13 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """ getter for y attrr"""
         return self.__y
 
     @y.setter
     def y_set(self, y):
-        if True:
+        """ setter for y attribute"""
+        if isinstance(y, int):
             if (y >= 0):
                 self.__y = y
             else:
