@@ -1,43 +1,54 @@
 #!/usr/bin/python3
+
+"""
+    Rectangle class V0.0
+    inherents Base
+"""
+
 from models.base import Base
-
-"""
-
-Rectangle class V0.0
-
-"""
 
 
 class Rectangle(Base):
     """
-    Rectangle class inherests Base
+        Rectangle class inherests Base
+        version 0: init
+        version 1: added atributes
+        version 2: added area
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initialization method
+            Initialization method
+            Return: an instance
         """
         super().__init__(id)
-        self.__x = x
-        self.__y = y
-        self.__height = height
-        self.__width = width
+        self.x = x
+        self.y = y
+        self.height = height
+        self.width = width
 
     def area(self):
         """
-        Returns the area of rectangle
+            compute the area of rectangle
+            Return: Area
         """
         return self.__height*self.__width
 
     def display(self):
         """
-        displays the rectangle
+            displays the rectangle
+            Return: None
         """
-        if self.__width * self.__height == 0:
+        if self.width * self.height == 0:
             print()
         else:
-            for i in range(self.__height):
-                print("#"*self.__width)
+            for i in range(self.height):
+                print("#"*self.width)
+    def __str__(self):
+        """
+            return a printable string describing a rectangle
+        """
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
 
     @property
     def width(self):
@@ -54,22 +65,23 @@ class Rectangle(Base):
         return self.__height
 
     @width.setter
-    def width_set(self, width):
+    def width(self, width):
         """
-        setter for height attribute
+            setter for height attribute
+            Return: None
         """
         if isinstance(width, int):
             if (width > 0):
                 self.__width = width
             else:
-                raise ("width must be > 0")
+                raise ValueError("width must be > 0")
         else:
             raise TypeError("width must be an integer")
 
     @height.setter
-    def height_set(self, height):
+    def height(self, height):
         """
-        setter for height attribute
+            setter for height attribute
         """
         if isinstance(height, int):
             if (height > 0):
@@ -82,14 +94,14 @@ class Rectangle(Base):
     @property
     def x(self):
         """
-        getter for x attribute
+            getter for x attribute
         """
         return self.__x
 
     @x.setter
-    def x_set(self, x):
+    def x(self, x):
         """
-        setter forx attribute
+            setter forx attribute
         """
         if isinstance(x, int):
             if (x >= 0):
@@ -103,14 +115,14 @@ class Rectangle(Base):
     @property
     def y(self):
         """
-        getter for y attrr
+            getter for y attrr
         """
         return self.__y
 
     @y.setter
-    def y_set(self, y):
+    def y(self, y):
         """
-        setter for y attribute
+            setter for y attribute
         """
         if isinstance(y, int):
             if (y >= 0):
