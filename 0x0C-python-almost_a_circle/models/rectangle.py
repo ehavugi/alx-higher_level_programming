@@ -2,7 +2,8 @@
 from models.base import Base
 
 """
-Rectangle class
+
+Rectangle class V0.0
 
 """
 
