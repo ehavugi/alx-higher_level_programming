@@ -39,16 +39,21 @@ class Rectangle(Base):
             displays the rectangle
             Return: None
         """
+        for i in range(self.y):
+            print()
         if self.width * self.height == 0:
             print()
         else:
             for i in range(self.height):
-                print("#"*self.width)
+                print(" "*self.x+"#"*self.width)
+
     def __str__(self):
         """
             return a printable string describing a rectangle
         """
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
+        x = "[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y)
+        x = x + " - {}/{}".format(self.width, self.height)
+        return (x)
 
     @property
     def width(self):
