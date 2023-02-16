@@ -27,6 +27,40 @@ class Rectangle(Base):
         self.height = height
         self.width = width
 
+    def update(self, *args, **kwargs):
+        """
+            update rectangle values
+                1st argument : id attribute
+                2nd agrument : width attribute
+                3rd argument : height attribute
+                4th argument : x
+                5th argument : y
+        """
+        if len(args) == 0:
+            if kwargs is not None:
+                for key in kwargs.keys():
+                    if key == "y":
+                        self.y = kwargs['y']
+                    if key == "x":
+                        self.x = kwargs['x']
+                    if key == "width":
+                        self.width = kwargs['width']
+                    if key == "height":
+                        self.height = kwargs['height']
+                    if key == "id":
+                        self.id = kwargs['id']
+        n = len(args)
+        if n >= 1:
+            self.id = args[0]
+        if n >= 2:
+            self.width = args[1]
+        if n >= 3:
+            self.height = args[2]
+        if n >= 4:
+            self.x = args[3]
+        if n >= 5:
+            self.y = args[4]
+
     def area(self):
         """
             compute the area of rectangle
