@@ -28,3 +28,5 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_middle(self):
         self.assertEqual(max_integer([1,2,9,0,2]),9)
+    def test_empty(self):
+        self.assertEqual(max_integer([]), None)
