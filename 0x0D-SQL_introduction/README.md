@@ -4,11 +4,11 @@ Intro to SQL
 
 ## Mandatory tasks
 - [ ] List databases
-- [ ] Create a database
-- [ ] Delete a database
-- [ ] List tables
-- [ ] First table
-- [ ] Full description
+- [x] Create a database
+- [x] Delete a database
+- [x] List tables
+- [x] First table
+- [x] Full description
 - [ ] List all in table
 - [ ] First add
 - [ ] Count 89
