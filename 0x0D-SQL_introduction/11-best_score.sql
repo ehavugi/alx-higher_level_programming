@@ -3,4 +3,4 @@
 -- should display both score and name (in this order)
 -- order by score top first
 -- db name will be passed to mysql
-SELECT score, name FROM second_table where score >= 10 ORDER BY score DESC;
+SELECT score, name FROM second_table WHERE score >= 10 ORDER BY score DESC;
