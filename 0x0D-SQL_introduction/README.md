@@ -3,25 +3,25 @@
 Intro to SQL
 
 ## Mandatory tasks
-- [ ] List databases
+- [x] List databases
 - [x] Create a database
 - [x] Delete a database
 - [x] List tables
 - [x] First table
 - [x] Full description
-- [ ] List all in table
-- [ ] First add
-- [ ] Count 89
-- [ ] Full creation
-- [ ] List by best
-- [ ] Select the best
-- [ ] Cheating is bad
-- [ ] Score too low
-- [ ] Average
-- [ ] Number by score
-- [ ] Say my name
+- [x] List all in table
+- [x] First add
+- [x] Count 89
+- [x] Full creation
+- [x] List by best
+- [x] Select the best
+- [x] Cheating is bad
+- [x] Score too low
+- [x] Average
+- [x] Number by score
+- [x] Say my name
 ## advanced tasks
 - [ ] Go to UTF8
-- [ ] Temperatures #0
-- [ ] Temperatures #1
-- [ ] Temperatures #2
+- [x] Temperatures #0
+- [x] Temperatures #1
+- [x] Temperatures #2
