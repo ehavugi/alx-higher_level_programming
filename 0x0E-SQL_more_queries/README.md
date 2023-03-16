@@ -1,12 +1,12 @@
 # 0x0E-SQL\_more\_queries
 
 ## Mandatory tasks
-- [ ] My privileges!
+- [x] My privileges!
 - [ ] Root user
 - [ ] Read user
-- [ ] Always a name
-- [ ] ID can't be null
-- [ ] Unique ID
+- [x] Always a name
+- [x] ID can't be null
+- [x] Unique ID
 - [ ] States table
 - [ ] Cities table
 - [ ] Cities of California
