@@ -3,14 +3,14 @@
 ## Mandatory tasks
 - [x] My privileges!
 - [ ] Root user
-- [ ] Read user
+- [x] Read user
 - [x] Always a name
 - [x] ID can't be null
 - [x] Unique ID
-- [ ] States table
-- [ ] Cities table
-- [ ] Cities of California
-- [ ] Cities by States
+- [x] States table
+- [x] Cities table
+- [x] Cities of California
+- [x] Cities by States
 - [ ] Genre ID by show
 - [ ] Genre ID for all shows
 - [ ] No genre
