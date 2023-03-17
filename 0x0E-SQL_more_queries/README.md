@@ -17,7 +17,7 @@
 - [x] Number of shows by genre
 - [x] My genres
 - [x] Only Comedy
-- [ ] List shows and genres
+- [X] List shows and genres
 ## advanced tasks
 - [x] Not my genre
 - [x] No Comedy tonight!
