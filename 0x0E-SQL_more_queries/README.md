@@ -13,7 +13,7 @@
 - [x] Cities by States
 - [x] Genre ID by show
 - [x] Genre ID for all shows
-- [ ] No genre
+- [x] No genre
 - [ ] Number of shows by genre
 - [ ] My genres
 - [ ] Only Comedy
