@@ -2,7 +2,7 @@
 
 ## Mandatory tasks
 - [x] My privileges!
-- [ ] Root user
+- [x] Root user
 - [x] Read user
 - [x] Always a name
 - [x] ID can't be null
@@ -11,8 +11,8 @@
 - [x] Cities table
 - [x] Cities of California
 - [x] Cities by States
-- [ ] Genre ID by show
-- [ ] Genre ID for all shows
+- [x] Genre ID by show
+- [x] Genre ID for all shows
 - [ ] No genre
 - [ ] Number of shows by genre
 - [ ] My genres
