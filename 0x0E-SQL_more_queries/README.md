@@ -14,12 +14,12 @@
 - [x] Genre ID by show
 - [x] Genre ID for all shows
 - [x] No genre
-- [ ] Number of shows by genre
-- [ ] My genres
-- [ ] Only Comedy
+- [x] Number of shows by genre
+- [x] My genres
+- [x] Only Comedy
 - [ ] List shows and genres
 ## advanced tasks
-- [ ] Not my genre
-- [ ] No Comedy tonight!
-- [ ] Rotten tomatoes
-- [ ] Best genre
+- [x] Not my genre
+- [x] No Comedy tonight!
+- [x] Rotten tomatoes
+- [x] Best genre
