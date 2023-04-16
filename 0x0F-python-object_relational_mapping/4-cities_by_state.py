@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" First module ORM for MYSQL
+""" SQL injection safe state name entry
 """
 
 import sys
@@ -13,7 +13,9 @@ if __name__ == "__main__":
         db = MySQLdb.connect(host="localhost", port=3307, user=user,
                              password=pwd, database=db_name)
         c = db.cursor()
-        c.execute("select * from states order by states.id")
+        c.execute("""SELECT cities.id, cities.name, states.name
+                  FROM states, cities where cities.state_id = states.id
+                  ORDER BY cities.id""")
         for i in c.fetchall():
             print(i)
         c.close()
