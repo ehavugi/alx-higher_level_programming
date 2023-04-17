@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Create table named states in sqlalchemy
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.dialects import mysql
