@@ -16,7 +16,10 @@ if __name__ == "__main__":
         c = db.cursor()
         c.execute("""SELECT * FROM states WHERE states.name LIKE '{}'
                   ORDER BY states.id""".format(stateName))
-        for i in c.fetchall():
+        states = c.fetchall()
+        for i in states:
             print(i)
+        if len(states) == 0:
+            print()
         c.close()
         db.close()
