@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""List all states objects containing letter a from hbtn_0e6_usa
+"""
 import sys
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker

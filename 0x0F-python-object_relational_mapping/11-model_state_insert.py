@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Adds State Object "Lousiana" to the database
+hbtn_0e_6_usa
+"""
 import sys
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker

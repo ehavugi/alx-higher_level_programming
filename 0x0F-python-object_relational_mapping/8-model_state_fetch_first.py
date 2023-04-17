@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Print first state or Nothing
+"""
 import sys
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
