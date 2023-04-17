@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Module list all state objects from a db
+"""
 import sys
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
