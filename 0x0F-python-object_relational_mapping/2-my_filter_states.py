@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-""" First module ORM for MYSQL
+#!/usr/bin/python3
+""" Use stateName as input and use it to select states.
 """
 
 import sys
