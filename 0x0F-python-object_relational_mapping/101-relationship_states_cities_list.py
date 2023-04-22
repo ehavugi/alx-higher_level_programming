@@ -17,6 +17,6 @@ if __name__ == "__main__":
     session = Session()
     states = session.query(State).order_by(State.id).all()
     for state in states:
-        print('{}:'.format(state.name))
+        print('{}: {}'.format(state.id, state.name))
         for city in sorted(state.cities, key=lambda x: x.id):
-            print('\t{}: {}'.format(city.id, city.name))
+            print('    {}: {}'.format(city.id, city.name))
