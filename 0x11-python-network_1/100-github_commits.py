@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# get 10 latest commits
+""" get 10 latest commits for a given user and repo"""
 import requests
 import sys
 
