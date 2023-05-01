@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" check http code and if greater than 400 print "Error code: xxx" else print content """
+""" check http code and if greater than 400 print "Error code: xxx"
+else print content """
 import requests
 import sys
 

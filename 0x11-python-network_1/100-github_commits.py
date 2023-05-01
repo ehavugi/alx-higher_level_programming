@@ -3,7 +3,12 @@
 import requests
 import sys
 if __name__ == "__main__":
-    commits = requests.get('https://api.github.com/repos/{}/{}/commits'.format(
-              sys.argv[1], sys.argv[2]))
-    for i in commits.json()[:10]:
-        print("{}: {}".format(i['sha'], i['commit']['author']['name']))
+    response = requests.get('https://api.github.com/repos/{}/{}/commits'.
+                            format(sys.argv[1], sys.argv[2]))
+    commits = response.json()
+    if len(commits) >= 10:
+        for i in commits[:10]:
+            print("{}: {}".format(i['sha'], i['commit']['author']['name']))
+    else:
+        for i in commits:
+            print("{}: {}".format(i['sha'], i['commit']['author']['name']))
