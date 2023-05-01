@@ -18,14 +18,6 @@ def find_peak(list_of_integers):
             return
         return max(list_of_integers)
     else:
-        a = list_of_integers[0]
-        b = list_of_integers[1]
-        c = list_of_integers[2]
-        if b > a and b > c:
-            return b
-        a = list_of_integers[-3]
-        b = list_of_integers[-2]
-        c = list_of_integers[-1]
-        if b > a and b > c:
-            return b
-        return find_peak(list_of_integers[1:-1])
+        return find_peak([list_of_integers[0],
+                         find_peak(list_of_integers[1:-1]),
+                         list_of_integers[-1]])
