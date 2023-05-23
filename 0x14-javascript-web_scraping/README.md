@@ -1,7 +1,7 @@
 # 0x14. JavaScript - Web scraping
 ## Mandatory tasks
-- [ ] 0. Readme
-- [ ] 1. Write me
+- [x] 0. Readme
+- [x] 1. Write me
 - [ ] 3. Star wars movie title
 - [ ] 4. Star wars Wedge Antilles
 - [ ] 5. Loripsum
