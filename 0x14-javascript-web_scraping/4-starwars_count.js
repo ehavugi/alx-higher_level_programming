@@ -12,15 +12,12 @@ request(url, function (error, response, body) {
   const n = res.count;
   let nFilms = 0;
   let characters;
-  let characterId;
+  const charUrl = 'https://swapi-api.alx-tools.com/api/people/18/';
   for (let j = 0; j < n; j++) {
     characters = res.results[j].characters;
     for (let k = 0; k < characters.length; k++) {
-      if (characters[k]) {
-        characterId = characters[k].split('/')[characters[k].split('/').length - 2];
-        if (parseInt(characterId) === 18) {
-          nFilms += 1;
-        }
+      if (characters[k] === charUrl) {
+        nFilms += 1;
       }
     }
   }
