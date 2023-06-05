@@ -1,11 +1,1 @@
-#0x15. JavaScript - Web jQuery
-- [x] 0. No JQuery
-- [x] 1. With JQuery
-- [x]  2. Click and turn red
-- [ ] 3. Add `.red` class
-- [ ] 4. Toggle classes
-- [ ] 5. List of elements
-- [ ] 6. Change the text
-- [ ] 7. Star wars character
-- [ ] 8. Star Wars movies
-- [ ] 9. Say Hello!
+#0x15. JavaScript - Web jQuery- [x] 0. No JQuery- [x] 1. With JQuery- [x]  2. Click and turn red- [x] 3. Add `.red` class- [x] 4. Toggle classes- [x] 5. List of elements- [x] 6. Change the text- [x] 7. Star wars character- [x] 8. Star Wars movies- [x] 9. Say Hello!
